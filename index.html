@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select a Message</title>
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        document.addEventListener('dragstart', event => event.preventDefault());
+        document.addEventListener('selectstart', event => event.preventDefault());
+    </script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #444;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            display: inline-block;
+            border: 2px solid transparent;
+        }
+
+        a:hover {
+            background-color: #007BFF;
+            color: white;
+            border-color: #007BFF;
+        }
+
+        a:focus {
+            outline: none;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select a Message</h1>
+    <ul>
+        <li><a href="B.html?message=https://music.163.com/song/media/outer/url?id=28160230.mp3">钢琴曲</a></li>
+        <li><a href="B.html?message=https://www.notion.so/images/page-cover/gradients_5.png">Png</a></li>
+        <li><a href="B.html?message=https://mirror.ghproxy.com/https://raw.githubusercontent.com/EQ767/blog/main/list/2024/Vi/Sunset_mp4_hd_1080p.mp4">Vid 1080P</a></li>
+        <li><a href="B.html?message=%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E4%BF%A1%E6%81%AF%E4%BC%A0%E9%80%92%E6%BC%94%E7%A4%BA-Hello%20from%20A">一句话</a></li>
+        <li><a href="B.html?message=https://github.githubassets.com/assets/mona-loading-default-c3c7aad1282f.gif">Gif</a></li>
+    </ul>
+</body>
+</html>
